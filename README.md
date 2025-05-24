@@ -132,8 +132,8 @@ Merlin/
 
 ## Acknowledge
 We appreciate the following github repos for their valuable codebase:
-- STID: https://github.com/thuml/Time-Series-Library
-- iTransformer and TimesNet: https://github.com/GestaltCogTeam/BasicTS
+- STID: https://github.com/GestaltCogTeam/BasicTS
+- iTransformer and TimesNet: https://github.com/thuml/Time-Series-Library
 - TSmixer: https://github.com/google-research/google-research/tree/master/tsmixer
 
 
