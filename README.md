@@ -22,7 +22,7 @@ This paper presents two data masking ways:
 1. The masked points in the low missing rate dataset are a subset of those in the high missing rate dataset.
 2. Both the low and high missing rate datasets are masked randomly.
 
-This project places the first masking approach in the `datasets/` directory. If you wish to use the second masking approach, please move the `datasets/PEMS04/preprocessing_PEMS04_random.py` file from the data folder to the `datasets/` directory before running.
+This project places the first masking approach in the `datasets/` directory. If you wish to use the second masking approach, please move the `datasets/PEMS04/preprocess_PEMS04_radom.py` file from the data folder to the `datasets/` directory before running. The processing way for other datasets is the same.
 
 Please use the following way to process the raw data:
 ```bash
