@@ -2,19 +2,19 @@ import copy
 import os
 import numpy as np
 import pandas as pd
+import random
+import time
+
 import torch
 from torch import nn, optim
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
-from matplotlib import pyplot as plt
-import random
-import time
+
 from metrics.mask_metric import masked_mae,masked_mape,masked_rmse
 from models.forecasting.STID.stid_arch import STID
 from datasets.data_solve import batch_data_solve_all_mask, batch_data_solve_teacher
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '4'
-
+# os.environ['CUDA_VISIBLE_DEVICES'] = '4'
 
 seed = 3407
 random.seed(seed)
