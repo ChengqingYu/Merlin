@@ -7,9 +7,7 @@ This code is built on Python 3.11. The required packages can be installed using 
 # Install Python
 conda create -n Merlin python=3.11
 conda activate Merlin
-# Install PyTorch
-pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu121
-# Install other dependencies
+# Install dependencies
 pip install -r requirements.txt
 ```
 
