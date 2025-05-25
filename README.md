@@ -10,6 +10,7 @@ conda activate Merlin
 # Install dependencies
 pip install -r requirements.txt
 ```
+**Note:** Our code has been tested in VS Code. If you run it in PyCharm, there might be path-related issues due to the differences in the path logic between VS Code and PyCharm.
 
 ## Data processing
 The four datasets (METR-LA, PEMS04, China AQI, and Global Wind) adopted in our paper can be found at the following two links:
