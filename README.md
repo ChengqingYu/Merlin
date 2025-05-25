@@ -16,7 +16,7 @@ The four datasets (METR-LA, PEMS04, China AQI, and Global Wind) adopted in our p
 
 Our repository provides compressed files for part of the data. Please extract them before running the data preprocessing code.
 
-This paper presents two data masking ways:
+We present two data masking ways:
 1. The masked points in the low missing rate dataset are a subset of those in the high missing rate dataset.
 2. Both the low and high missing rate datasets are masked randomly.
 
