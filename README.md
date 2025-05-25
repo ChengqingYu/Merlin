@@ -148,7 +148,7 @@ Merlin/
 ├── python train_student_Merlin.py
 ├── python train_onestage.py
 ├── python train_twostage.py
-├── requirement.txt
+├── requirement.txt           # Dependencies
 └── README.md                 # Project overview and instructions
 ```
 
