@@ -1,6 +1,8 @@
 # Merlin
 Code for our SIGKDD'25 paper "Merlin: Multi-View Representation Learning for Robust Multivariate Time Series Forecasting with Unfixed Missing Rates"
 
+<img src="figure/Merlin.jpg" alt="model archtecture" style="zoom:80%;" />
+
 ## Requirements
 This code is built on Python 3.11. The required packages can be installed using the following command:
 ```bash
