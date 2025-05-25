@@ -22,6 +22,7 @@ def Merlin_Loss_mutilstage(teacher_fore, teacher_HR,
     :param m: The number of missing rates
     :param weight_CL: The weight of Knowledge distillation
     :param weight_KD: The weight of contrastive loss
+    :param weight_pre: The weight of L1 loss
     :param epoch: The train epoch
     :return: Loss
     """
@@ -61,6 +62,7 @@ def Merlin_Loss_add(teacher_fore, teacher_HR,
     :param m: The number of missing rates
     :param weight_CL: The weight of Knowledge distillation
     :param weight_KD: The weight of contrastive loss
+    :param weight_pre: The weight of L1 loss
     :param epoch: The train epoch
     :return: Loss
     """
