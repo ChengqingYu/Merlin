@@ -16,6 +16,8 @@ pip install -r requirements.txt
 The four datasets (METR-LA, PEMS04, China AQI, and Global Wind) adopted in our paper can be found at the following two links:
 
 Our repository provides compressed files for part of the data. Please extract them before running the data preprocessing code.
+1. Baidu Netdisk: https://pan.baidu.com/s/1YPm7Qhj-FV3CBT36n-GG2A?pwd=2ytm (Extraction code: 2ytm)
+2. Google Drive: https://drive.google.com/drive/folders/1m80WUbHmbTaCP3WXGUJWdGMd0WfQ8Rt8?usp=drive_link
 
 We present two data masking ways:
 1. The masked points in the low missing rate dataset are a subset of those in the high missing rate dataset.
