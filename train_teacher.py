@@ -20,17 +20,10 @@ seed = 3407
 random.seed(seed)
 torch.manual_seed(seed)
 np.random.seed(seed)
-""""""
-
-# denormalization
-def Inverse_normalization(x,max,min):
-    return x * (max - min) + min
-
 
 # PEMS04, METR-LA, Global-Wind, China-AQI
 data_name = "PEMS04"
 model_name = "STID_Teacher"
-
 
 ### Hyperparameter
 num_nodes=307
@@ -50,7 +43,7 @@ time_of_day_size=288
 day_of_week_size=7
 
 # Training parameters
-batch_size = 32
+batch_size = 16
 epoch = 200
 lr_rate = 0.0002
 weight_decay = 0.0001
@@ -184,6 +177,9 @@ with torch.no_grad():
             all_true = torch.cat([all_true, test_y[:,:,:,0].to(device2)], dim=0)
         num += 1
 
+# denormalization
+def Inverse_normalization(x,max,min):
+    return x * (max - min) + min
 
 final_pred = Inverse_normalization(all_pre, raw_data["max_min"][0],raw_data["max_min"][1])
 final_target = Inverse_normalization(all_true, raw_data["max_min"][0],raw_data["max_min"][1])
