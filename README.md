@@ -80,12 +80,14 @@ python train_student_merlin.py
 After running the above file, the model's performance metrics under the four missing rates will be printed directly.
 
 ## Train one stage model
+We provid TSmixer as an example.
 If you want to train a separate forecasting model for a specific missing rate, you can run and debug the following code：
 ```bash
 python train_onestage.py
 ```
 
 ## Train two stage model
+We provid TimesNet as the imputation and iTransformer as forecasting.
 If you want to train a two stage model (imputation + forecasting) for a specific missing rate, you can run and debug the following code：
 ```bash
 python train_twostage.py
@@ -136,7 +138,7 @@ Merlin/
 │   ├── forecasting/
 │   │   ├── STID/
 │   │   ├── TSmixer/
-│   │   └── Itransformer/
+│   │   └── iTransformer/
 │   └── imputation/
 │       └── TimesNet/
 │                        
