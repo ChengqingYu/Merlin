@@ -57,7 +57,7 @@ python datasets/preprocess_WIND_subset.py
 2. weight_KD: 2 (The weight of knowledge distillation.)
 3. weight_CL: 1 (The weight of contrastive loss.)
 4. Temperature: 1
-5. number_missing_rates: 4 (We use four missing rates in this paper)
+5. num_miss_rate: 4 (We use four missing rates in this paper)
 6. batch size: 16
 7. epoch: 101
 8. max_norm = 5 (Gradient clipping.)
@@ -71,7 +71,7 @@ After completing data preprocessing, please train the teacher model using the fo
 ```bash
 python train_teacher.py
 ```
-This repository provides pretrained teacher model weight files for four datasets. For details, please refer to directories such as `model_results/PEMS04`.
+This repository provides pretrained teacher model weight files for four datasets. For details, please refer to directories such as `model_results/PEMS04`. Due to the large size of the global wind files, we have not uploaded them to the repository yet.
 
 After training the teacher model, please train the student model using the following way:
 ```bash
@@ -109,9 +109,17 @@ The folder structure is organized as follows::
 Merlin/
 ├── datasets/                  # Contains processed data and masking scripts
 │   ├── METR-LA/
+│   │   ├── METR-LA.h5
+│   │   └── METR-LA.pkl
 │   ├── PEMS04/
+│   │   ├── adj_PEMS04_distance.pkl
+│   │   ├── adj_PEMS04.pkl
+│   │   ├── PEMS04.csv
+│   │   └── PEMS04.npz
 │   ├── China-AQI/
+│   │   └── China-AQI.csv
 │   ├── Global-wind/
+│   │   └── Global-Wind.csv
 │   ├── preprocessing_METR_subset.py
 │   ├── preprocessing_PEMS_subset.py
 │   ├── preprocessing_AQI_subset.py
@@ -140,6 +148,7 @@ Merlin/
 ├── python train_student_Merlin.py
 ├── python train_onestage.py
 ├── python train_twostage.py
+├── requirement.txt
 └── README.md                 # Project overview and instructions
 ```
 
