@@ -108,7 +108,7 @@ If the code is helpful to you, please cite the following paper:
 
 ## Folder Structure:
 
-The folder structure is organized as follows::
+The folder structure is organized as follows:
 
 ```
 Merlin/
