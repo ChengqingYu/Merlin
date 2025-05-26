@@ -42,7 +42,7 @@ python datasets/preprocess_WIND_subset.py
 ### STID
 1. input_len: 12 (This paper follows the experimental settings of most existing spatiotemporal forecasting models, fixing both the length of historical observations and future forecasting to 12.)
 2. output_len: 12
-3. num_nodes: number of time series。METR-LA：207, PEMS04: 307, China AQI: 1300, Global wind: 2908
+3. num_nodes: number of time series. METR-LA：207, PEMS04: 307, China AQI: 1300, Global wind: 2908
 4. input_size: 3 (It represents the dimensions after concatenating the original time series with the two temporal embeddings, set to 3.)
 5. if_T_i_D: True
 6. if_D_i_W: True
