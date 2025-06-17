@@ -98,11 +98,14 @@ python train_twostage.py
 ## citation
 If the code is helpful to you, please cite the following paper:
 ```bibtex
-@inproceedings{yu2025merlin,
-  title={Merlin: Multi-View Representation Learning for Robust Multivariate Time Series Forecasting with Unfixed Missing Rates},
-  author={Yu, Chengqing and Wang, Fei and Yang, Chuanguang and Shao, Zezhi and Sun, Tao and Qian, Tangwen and Wei, Wei and An, Zhulin and Xu, Yongjun},
-  booktitle = {SIGKDD},
-  year={2025}
+@misc{yu2025merlinmultiviewrepresentationlearning,
+      title={Merlin: Multi-View Representation Learning for Robust Multivariate Time Series Forecasting with Unfixed Missing Rates}, 
+      author={Chengqing Yu and Fei Wang and Chuanguang Yang and Zezhi Shao and Tao Sun and Tangwen Qian and Wei Wei and Zhulin An and Yongjun Xu},
+      year={2025},
+      eprint={2506.12459},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2506.12459}, 
 }
 ```
 
